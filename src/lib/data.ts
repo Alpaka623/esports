@@ -59,9 +59,9 @@ export const players: Player[] = [
     image: 'player-4',
     bio: 'Cool, calm, and collected, Broken Orange is the team\'s reliable carry. His precise positioning and consistent damage output in teamfights have secured countless victories for GOG.',
     stats: [
-      { name: 'KDA', value: '7.0' },
-      { name: 'Win Rate', value: '71%' },
-      { name: 'CS/min', value: '9.8' },
+      { name: 'KDA', value: '4.2' },
+      { name: 'Win Rate', value: '60%' },
+      { name: 'CS/min', value: '6.8' },
     ],
   },
   {
@@ -71,9 +71,9 @@ export const players: Player[] = [
     image: 'player-5',
     bio: 'The vigilant protector and shotcaller, NoWin15\'s vision control and crucial saves are the backbone of the team. Her game sense and communication enable her teammates to shine.',
     stats: [
-      { name: 'KDA', value: '3.8' },
-      { name: 'Win Rate', value: '69%' },
-      { name: 'Vision Score/min', value: '2.5' },
+      { name: 'KDA', value: '7.0' },
+      { name: 'Win Rate', value: '65%' },
+      { name: 'avg. Vision Score', value: '57' },
     ],
   },
 ];

@@ -1,21 +1,13 @@
-import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { players } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import {
-  IconBot,
-  IconJungle,
-  IconMid,
-  IconSupport,
-  IconTop,
-} from '@/components/icons/role-icons';
 
 const roleIcons: { [key: string]: React.ReactNode } = {
-  Top: <IconTop className="h-8 w-8 text-primary" />,
-  Jungle: <IconJungle className="h-8 w-8 text-primary" />,
-  Mid: <IconMid className="h-8 w-8 text-primary" />,
-  Bot: <IconBot className="h-8 w-8 text-primary" />,
-  Support: <IconSupport className="h-8 w-8 text-primary" />,
+  Top: <img src="/imgs/Position_Challenger-Top.png" alt="Top Icon" className="h-8 w-8" />,
+  Jungle: <img src="/imgs/Position_Challenger-Jungle.png" alt="Jungle Icon" className="h-8 w-8" />,
+  Mid: <img src="/imgs/Position_Challenger-Mid.png" alt="Mid Icon" className="h-8 w-8" />,
+  Bot: <img src="/imgs/Position_Challenger-Bot.png" alt="Bot Icon" className="h-8 w-8" />,
+  Support: <img src="/imgs/Position_Challenger-Support.png" alt="Support Icon" className="h-8 w-8" />,
 };
 
 export default function TeamPage() {
@@ -35,19 +27,6 @@ export default function TeamPage() {
           const playerImage = PlaceHolderImages.find((img) => img.id === player.image);
           return (
             <Card key={player.id} className="overflow-hidden border-transparent bg-transparent shadow-none">
-              <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 items-center`}>
-                <div className={`relative aspect-square md:aspect-[4/5] ${index % 2 !== 0 ? 'md:order-last' : ''}`}>
-                  {playerImage && (
-                    <Image
-                      src={playerImage.imageUrl}
-                      alt={playerImage.description}
-                      fill
-                      className="object-cover rounded-lg shadow-2xl shadow-primary/20"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      data-ai-hint={playerImage.imageHint}
-                    />
-                  )}
-                </div>
                 <div className="p-4">
                   <div className="flex items-center gap-4 mb-4">
                     {roleIcons[player.role]}
@@ -68,7 +47,6 @@ export default function TeamPage() {
                     ))}
                   </div>
                 </div>
-              </div>
             </Card>
           );
         })}
