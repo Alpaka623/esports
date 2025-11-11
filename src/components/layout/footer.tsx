@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { GOLogo } from '@/components/icons/go-logo';
 import { socialLinks } from '@/lib/data';
 

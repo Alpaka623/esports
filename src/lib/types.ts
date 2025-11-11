@@ -15,7 +15,6 @@ export type Player = {
   id: number;
   name: string;
   role: 'Top' | 'Jungle' | 'Mid' | 'Bot' | 'Support';
-  image: string;
   bio: string;
   birthdate?: string;
   stats: { name: string; value: string }[];

@@ -112,7 +112,6 @@ export default function Home() {
           <h2 className="text-3xl font-bold font-headline text-center mb-12">Meet The Team</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8">
             {teamPlayers.map((player) => {
-              const playerImage = PlaceHolderImages.find((img) => img.id === player.image);
               return (
                 <Link href="/team" key={player.id} className="group">
                   <Card>
