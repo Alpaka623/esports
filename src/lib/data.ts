@@ -1,18 +1,14 @@
-import type { Player, NewsArticle, NavLink, SocialLink } from './types';
-import { Youtube, Twitch, Twitter, Instagram } from 'lucide-react';
+import type { Player, NavLink, SocialLink } from './types';
+import { Instagram } from 'lucide-react';
 
 export const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
   { href: '/team', label: 'Team' },
-  { href: '/news', label: 'News' },
   { href: '/about', label: 'About' },
 ];
 
 export const socialLinks: SocialLink[] = [
-  { name: 'Twitter', url: '#', icon: Twitter },
-  { name: 'Twitch', url: '#', icon: Twitch },
   { name: 'Instagram', url: '#', icon: Instagram },
-  { name: 'YouTube', url: '#', icon: Youtube },
 ];
 
 export const players: Player[] = [
@@ -103,40 +99,5 @@ export const players: Player[] = [
       { name: 'Nationality', value: 'German' },
       { name: 'Fav offrole Champ', value: 'Malzahar' },
     ],
-  },
-];
-
-export const news: NewsArticle[] = [
-  {
-    id: 1,
-    title: 'GO ESPORTS Qualifies for Summer Playoffs!',
-    date: '2024-08-16',
-    image: 'news-1',
-    summary: 'After a decisive 2-0 victory against Cyber Dragons, the team has officially secured their spot in the Summer Split playoffs. The hard work and dedication have paid off!',
-    content: 'Full article content about qualifying for the playoffs...',
-  },
-  {
-    id: 2,
-    title: 'Welcome Zenith, Our New ADC!',
-    date: '2024-07-20',
-    image: 'news-2',
-    summary: 'We are thrilled to announce the newest addition to our roster, Zenith. His exceptional mechanics and game sense will be a huge asset to the team.',
-    content: 'Full article content about the new player...',
-  },
-  {
-    id: 3,
-    title: 'New Partnership with TechGiant Inc.',
-    date: '2024-07-10',
-    image: 'news-3',
-    summary: 'GO ESPORTS is proud to partner with TechGiant Inc., a leader in high-performance gaming peripherals. This partnership will equip our players with the best gear to compete at the highest level.',
-    content: 'Full article content about the new partnership...',
-  },
-  {
-    id: 4,
-    title: 'Match Analysis: GO vs Shadow Wolves',
-    date: '2024-08-09',
-    image: 'news-4',
-    summary: 'A deep dive into our tough loss against Shadow Wolves. We break down the key moments, strategies, and what we\'re learning as we head towards playoffs.',
-    content: 'Full article content analyzing the match...',
   },
 ];

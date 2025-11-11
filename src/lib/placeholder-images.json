@@ -13,30 +13,6 @@
       "imageHint": "gaming logo"
     },
     {
-      "id": "news-1",
-      "description": "Image for news about winning a tournament.",
-      "imageUrl": "https://images.unsplash.com/photo-1757365225475-97bce502c296?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXNwb3J0cyUyMHRyb3BoeXxlbnwwfHx8fDE3NjI4NDg1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "esports trophy"
-    },
-    {
-      "id": "news-2",
-      "description": "Image for news about a new player joining.",
-      "imageUrl": "https://images.unsplash.com/photo-1611075385356-1f295304c68e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVhbSUyMGhhbmRzaGFrZXxlbnwwfHx8fDE3NjI3ODIzNzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "team handshake"
-    },
-    {
-      "id": "news-3",
-      "description": "Image for news about a sponsorship deal.",
-      "imageUrl": "https://images.unsplash.com/photo-1709715357520-5e1047a2b691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzYyNzUwMzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business meeting"
-    },
-    {
-      "id": "news-4",
-      "description": "Image for an analysis of the last match.",
-      "imageUrl": "https://images.unsplash.com/photo-1552112455-d35337ee57a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdHJhdGVneSUyMGJvYXJkfGVufDB8fHx8MTc2Mjg0MTY5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "strategy board"
-    },
-    {
       "id": "about-us-team",
       "description": "GO Esports team posing together.",
       "imageUrl": "https://images.unsplash.com/photo-1759701547467-a54a5e86a4f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlc3BvcnRzJTIwdGVhbXxlbnwwfHx8fDE3NjI4NDg1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
