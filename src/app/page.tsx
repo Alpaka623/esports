@@ -5,20 +5,13 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Newspaper, Users } from 'lucide-react';
 import { players, news } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import {
-  IconBot,
-  IconJungle,
-  IconMid,
-  IconSupport,
-  IconTop,
-} from '@/components/icons/role-icons';
 
 const roleIcons: { [key: string]: React.ReactNode } = {
-  Top: <IconTop className="h-6 w-6" />,
-  Jungle: <IconJungle className="h-6 w-6" />,
-  Mid: <IconMid className="h-6 w-6" />,
-  Bot: <IconBot className="h-6 w-6" />,
-  Support: <IconSupport className="h-6 w-6" />,
+  Top: <img src="/imgs/Position_Challenger-Top.png" alt="Top Icon" className="h-8 w-8" />,
+  Jungle: <img src="/imgs/Position_Challenger-Jungle.png" alt="Jungle Icon" className="h-8 w-8" />,
+  Mid: <img src="/imgs/Position_Challenger-Mid.png" alt="Mid Icon" className="h-8 w-8" />,
+  Bot: <img src="/imgs/Position_Challenger-Bot.png" alt="Bot Icon" className="h-8 w-8" />,
+  Support: <img src="/imgs/Position_Challenger-Support.png" alt="Support Icon" className="h-8 w-8" />,
 };
 
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
@@ -30,16 +23,7 @@ export default function Home() {
     <div className="flex flex-col items-center">
       {/* Hero Section */}
       <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover brightness-50"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
+
         <div className="relative z-10 p-4">
           <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-accent">
             GOG ESPORTS
