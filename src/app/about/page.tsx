@@ -24,10 +24,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold font-headline mb-4">Our <span className="text-accent">History</span></h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Founded in 2020, GO ESPORTS (Gymnastik ohne Grenzen) emerged from a small group of passionate gamers who believed in a holistic approach to competitive gaming. The name, "Gymnastics Without Borders," reflects our core belief in mental and physical fitness as a key to unlocking digital potential.
-              </p>
-              <p>
-                From humble beginnings in online tournaments, we've climbed the ranks, proving that our unique training philosophy builds not just better players, but a stronger, more resilient team. Our journey is a testament to the idea that true skill transcends the game itself.
+                Founded in 2025, GO ESPORTS (Gymnastik ohne Grenzen) emerged from a small group of passionate gamers who believed in a holistic approach to competitive gaming. The name, "Gymnastics Without Borders," reflects our core belief in mental and physical fitness as a key to unlocking digital potential.
               </p>
             </div>
           </div>

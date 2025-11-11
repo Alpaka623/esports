@@ -1,6 +1,5 @@
 import { Card } from '@/components/ui/card';
 import { players } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const roleIcons: { [key: string]: React.ReactNode } = {
   Top: <img src="/imgs/Position_Challenger-Top.png" alt="Top Icon" className="h-8 w-8" />,
@@ -42,28 +41,36 @@ export default function TeamPage() {
           }
 
           return (
-            <Card key={player.id} className="overflow-hidden border-transparent bg-transparent shadow-none">
-                <div className="p-4">
-                  <div className="flex items-center gap-4 mb-4">
-                    {roleIcons[player.role]}
-                    <div>
-                      <p className="text-lg font-semibold text-primary">{player.role}</p>
-                      <h2 className="text-4xl font-bold font-headline">{player.name}</h2>
+            <div key={player.id}>
+              {player.id == 6 && (
+                <>
+                  <hr/>
+                  <h2 className="text-3xl font-bold font-headline mb-8 mt-16 text-center">Substitutes</h2>
+                </>
+            )}
+              <Card className="overflow-hidden border-transparent bg-transparent shadow-none">
+                  <div className="p-4">
+                    <div className="flex items-center gap-4 mb-4">
+                      {roleIcons[player.role]}
+                      <div>
+                        <p className="text-lg font-semibold text-primary">{player.role}</p>
+                        <h2 className="text-4xl font-bold font-headline">{player.name}</h2>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground text-lg mb-8">
+                      {player.bio}
+                    </p>
+                    <div className="grid grid-cols-3 gap-4 text-center">
+                      {displayStats.map((stat) => (
+                        <div key={stat.name} className="bg-card p-4 rounded-lg">
+                          <p className="text-2xl font-bold font-headline text-primary">{stat.value}</p>
+                          <p className="text-sm text-muted-foreground">{stat.name}</p>
+                        </div>
+                      ))}
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-lg mb-8">
-                    {player.bio}
-                  </p>
-                  <div className="grid grid-cols-3 gap-4 text-center">
-                    {displayStats.map((stat) => (
-                      <div key={stat.name} className="bg-card p-4 rounded-lg">
-                        <p className="text-2xl font-bold font-headline text-primary">{stat.value}</p>
-                        <p className="text-sm text-muted-foreground">{stat.name}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-            </Card>
+              </Card>
+            </div>
           );
         })}
       </div>
