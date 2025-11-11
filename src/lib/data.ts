@@ -20,7 +20,7 @@ export const players: Player[] = [
     bio: 'Leading the charge in the top lane is ANOYRE. Known for his rock-solid consistency and unshakable mental, he\'s the frontline leader the team trusts to weather any storm and secure the win.',
     stats: [
       { name: 'Nationality', value: 'German' },
-      { name: 'Fav offrole Champ', value: 'Jarvan IV' },
+      { name: 'Fav offrole Champ', value: 'Xerath' },
     ],
   },
   {
