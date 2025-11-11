@@ -2,10 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, Calendar, Newspaper, Users } from 'lucide-react';
-import { players, news, matches } from '@/lib/data';
+import { ArrowRight, Newspaper, Users } from 'lucide-react';
+import { players, news } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import type { Player, Match } from '@/lib/types';
 import {
   IconBot,
   IconJungle,
@@ -24,7 +23,6 @@ const roleIcons: { [key: string]: React.ReactNode } = {
 
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
 const latestNews = news.slice(0, 2);
-const upcomingMatch = matches.find((match) => new Date(match.date) > new Date());
 const teamPlayers = players.slice(0, 5);
 
 export default function Home() {
@@ -51,7 +49,7 @@ export default function Home() {
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link href="/schedule">Match Schedule</Link>
+              <Link href="/news">Latest News</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
               <Link href="/team">Meet the Team</Link>
@@ -62,7 +60,7 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-16 sm:py-24 space-y-24">
         {/* Quick Links Section */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Link href="/team" className="group">
             <Card className="h-full text-center hover:border-primary transition-all duration-300 transform hover:-translate-y-1">
               <CardHeader>
@@ -71,17 +69,6 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">Meet the players behind the champions.</p>
-              </CardContent>
-            </Card>
-          </Link>
-          <Link href="/schedule" className="group">
-            <Card className="h-full text-center hover:border-primary transition-all duration-300 transform hover:-translate-y-1">
-              <CardHeader>
-                <Calendar className="h-12 w-12 mx-auto text-primary" />
-                <CardTitle className="font-headline mt-4">Schedule</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">Catch us live and see our past results.</p>
               </CardContent>
             </Card>
           </Link>
@@ -98,40 +85,34 @@ export default function Home() {
           </Link>
         </section>
 
-        {/* Upcoming Match & Latest News */}
-        <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-1">
-            <h2 className="text-3xl font-bold font-headline mb-6">Next Match</h2>
-            {upcomingMatch ? <UpcomingMatchCard match={upcomingMatch} /> : <p>No upcoming matches scheduled.</p>}
-          </div>
-          <div className="lg:col-span-2">
-            <h2 className="text-3xl font-bold font-headline mb-6">Latest News</h2>
-            <div className="space-y-6">
-              {latestNews.map((article) => {
-                const articleImage = PlaceHolderImages.find((img) => img.id === article.image);
-                return (
-                  <Link href="/news" key={article.id}>
-                    <Card className="flex flex-col md:flex-row items-center gap-6 p-4 hover:bg-card/80 transition-colors">
-                      {articleImage && (
-                        <Image
-                          src={articleImage.imageUrl}
-                          alt={articleImage.description}
-                          width={150}
-                          height={100}
-                          className="rounded-md object-cover w-full md:w-[150px] h-[100px]"
-                          data-ai-hint={articleImage.imageHint}
-                        />
-                      )}
-                      <div className="flex-1">
-                        <p className="text-sm text-muted-foreground">{article.date}</p>
-                        <h3 className="font-semibold font-headline text-lg mt-1">{article.title}</h3>
-                      </div>
-                      <ArrowRight className="h-5 w-5 text-primary ml-auto hidden md:block" />
-                    </Card>
-                  </Link>
-                );
-              })}
-            </div>
+        {/* Latest News */}
+        <section>
+          <h2 className="text-3xl font-bold font-headline mb-6 text-center">Latest News</h2>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            {latestNews.map((article) => {
+              const articleImage = PlaceHolderImages.find((img) => img.id === article.image);
+              return (
+                <Link href="/news" key={article.id}>
+                  <Card className="flex flex-col md:flex-row items-center gap-6 p-4 hover:bg-card/80 transition-colors">
+                    {articleImage && (
+                      <Image
+                        src={articleImage.imageUrl}
+                        alt={articleImage.description}
+                        width={150}
+                        height={100}
+                        className="rounded-md object-cover w-full md:w-[150px] h-[100px]"
+                        data-ai-hint={articleImage.imageHint}
+                      />
+                    )}
+                    <div className="flex-1">
+                      <p className="text-sm text-muted-foreground">{article.date}</p>
+                      <h3 className="font-semibold font-headline text-lg mt-1">{article.title}</h3>
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-primary ml-auto hidden md:block" />
+                  </Card>
+                </Link>
+              );
+            })}
           </div>
         </section>
 
@@ -167,52 +148,5 @@ export default function Home() {
         </section>
       </div>
     </div>
-  );
-}
-
-function UpcomingMatchCard({ match }: { match: Match }) {
-  const opponentLogo = PlaceHolderImages.find((img) => img.id === match.opponent.logo);
-  const gogLogo = PlaceHolderImages.find((img) => img.id === 'gog-logo');
-  const matchDate = new Date(match.date);
-
-  return (
-    <Card className="bg-gradient-to-br from-card to-card/60 p-1 shadow-lg">
-      <CardContent className="p-6 bg-card rounded-lg">
-        <p className="text-sm text-center text-muted-foreground">{match.tournament}</p>
-        <div className="flex items-center justify-around my-4">
-          <div className="flex flex-col items-center gap-2">
-            {gogLogo && (
-              <Image
-                src={gogLogo.imageUrl}
-                alt={gogLogo.description}
-                width={64}
-                height={64}
-                className="rounded-full"
-                data-ai-hint={gogLogo.imageHint}
-              />
-            )}
-            <span className="font-semibold">GOG</span>
-          </div>
-          <span className="text-2xl font-bold text-muted-foreground">VS</span>
-          <div className="flex flex-col items-center gap-2">
-            {opponentLogo && (
-              <Image
-                src={opponentLogo.imageUrl}
-                alt={opponentLogo.description}
-                width={64}
-                height={64}
-                className="rounded-full"
-                data-ai-hint={opponentLogo.imageHint}
-              />
-            )}
-            <span className="font-semibold">{match.opponent.name}</span>
-          </div>
-        </div>
-        <div className="text-center">
-          <p className="font-bold text-lg text-primary">{matchDate.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' })}</p>
-          <p className="text-muted-foreground">{matchDate.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' })}</p>
-        </div>
-      </CardContent>
-    </Card>
   );
 }
