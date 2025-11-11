@@ -50,7 +50,7 @@ export const players: Player[] = [
     name: 'BROKEN ORANGE',
     role: 'Bot',
     birthdate: '2005-12-11',
-    bio: 'Cool, calm, and collected—that\'s "BROKEN ORANGE". As the team\'s bot lane carry, he\'s the definition of reliable. His precise mechanics and ice-cold demeanor in teamfights are what you can count on when the game is on the line.',
+    bio: 'Cool, calm, and collected—that\'s BROKEN ORANGE. As the team\'s bot lane carry, he\'s the definition of reliable. His precise mechanics and ice-cold demeanor in teamfights are what you can count on when the game is on the line.',
     stats: [
       { name: 'Nationality', value: 'German' },
       { name: 'Favorite offrole Champ', value: 'Lillia' },
@@ -94,7 +94,7 @@ export const players: Player[] = [
     name: 'KASHAD',
     role: 'Support',
     birthdate: '2005-03-20',
-    bio: 'Lighting up the map and the team is "KASHAD". As our second support, her game-changing vision control and clutch playmaking are legendary. She’s the vigilant protector who ensures the team is always set up for the next big play.',
+    bio: 'Lighting up the map and the team is KASHAD. As our second support, her game-changing vision control and clutch playmaking are legendary. She’s the vigilant protector who ensures the team is always set up for the next big play.',
     stats: [
       { name: 'Nationality', value: 'German' },
       { name: 'Favorite offrole Champ', value: 'Malzahar' },
