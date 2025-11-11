@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { GOLogo } from '@/components/icons/go-logo';
 import { socialLinks } from '@/lib/data';
 
@@ -26,6 +27,11 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-border/40 text-center text-sm text-foreground/60">
+          <div className="flex justify-center gap-4 mb-2">
+            <Link href="/impressum" className="text-primary hover:underline">
+              Impressum
+            </Link>
+          </div>
           <p>&copy; {new Date().getFullYear()} GO Esports. All rights reserved.</p>
           <p className="mt-2">
             Contact us:{' '}
