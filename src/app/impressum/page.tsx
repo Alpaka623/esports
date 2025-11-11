@@ -14,7 +14,6 @@ export default function ImpressumPage() {
               Anbieterkennung (nach § 5 TMG):
             </h3>
             <p>Finn Mierke</p>
-            <p>Deine Anschrift</p>
             <p>Otto-Hue-Straße 5</p>
             <p>59439, Holzwickede</p>
             <p>
