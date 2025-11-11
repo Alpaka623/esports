@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center space-x-2">
-            <GOLogo className="h-8 w-8 text-primary" />
+            <GOLogo className="h-16 w-16 text-primary" />
             <span className="font-bold font-headline">GO ESPORTS</span>
           </div>
           <div className="flex items-center space-x-4">

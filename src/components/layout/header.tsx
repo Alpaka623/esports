@@ -2,6 +2,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
@@ -18,9 +19,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <div className="mr-4 flex">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
-            <GOLogo className="h-8 w-8 text-primary" />
+        <div className="mr-4 flex pl-1">
+          <Link href="/" className="mr-4 flex items-center space-x-2">
+            <GOLogo className="h-14 w-14 text-primary " />
             <span className="font-bold font-headline">GO ESPORTS</span>
           </Link>
         </div>
