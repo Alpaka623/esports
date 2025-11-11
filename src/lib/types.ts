@@ -17,6 +17,7 @@ export type Player = {
   role: 'Top' | 'Jungle' | 'Mid' | 'Bot' | 'Support';
   image: string;
   bio: string;
+  birthdate?: string;
   stats: { name: string; value: string }[];
 };
 

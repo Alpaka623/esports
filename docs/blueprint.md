@@ -1,12 +1,12 @@
-# **App Name**: GOG Esports Hub
+# **App Name**: GO Esports Hub
 
 ## Core Features:
 
 - Player Profiles: Detailed profiles for each team member, showcasing their roles, stats, and achievements.
 - Match Schedule and Results: Interactive schedule displaying upcoming matches and historical results, with an option to filter by tournament or opponent.
-- News Section: Latest news, announcements, and blog posts about GOG Esports and the League of Legends team.
+- News Section: Latest news, announcements, and blog posts about GO Esports and the League of Legends team.
 - About Us Page: Information about the team's history, mission, and values.
-- Contact Footer: Footer section with contact information, including a mailto link for contacting contact@gog-esports.de.
+- Contact Footer: Footer section with contact information, including a mailto link for contacting contact@GO-esports.de.
 
 ## Style Guidelines:
 

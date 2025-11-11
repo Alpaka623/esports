@@ -6,9 +6,9 @@ import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'GOG Esports Hub',
-  description: 'Welcome to the official hub for GOG ESPORTS League of Legends team.',
-  keywords: ['GOG ESPORTS', 'League of Legends', 'esports', 'gaming', 'team'],
+  title: 'GO Esports Hub',
+  description: 'Welcome to the official hub for GO ESPORTS League of Legends team.',
+  keywords: ['GO ESPORTS', 'League of Legends', 'esports', 'gaming', 'team'],
 };
 
 export default function RootLayout({
