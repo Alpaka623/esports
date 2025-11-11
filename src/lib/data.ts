@@ -27,11 +27,11 @@ export const players: Player[] = [
     id: 2,
     name: 'LE KARPADÓRE',
     role: 'Jungle',
-    birthdate: '2002-05-14',
+    birthdate: '2006-05-17',
     bio: 'You never know where he\'ll strike from. LE KARPADÓRE is the strategic mastermind in the jungle, always two steps ahead. His intelligent game sense makes him the engine that drives GO\'s success.',
     stats: [
       { name: 'Nationality', value: 'German' },
-      { name: 'Fav offrole Champ', value: '72%' },
+      { name: 'Fav offrole Champ', value: 'Thresh' },
     ],
   },
   {

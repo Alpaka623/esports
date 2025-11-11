@@ -38,7 +38,7 @@ export default function AboutPage() {
 
         {/* Our Mission Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl shadow-accent/20">
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl shadow-accent/20  hidden md:block">
               <Image
                 src="/imgs/pic1.jpg"
                 alt="GO Esports team"
