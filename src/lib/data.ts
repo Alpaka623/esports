@@ -18,10 +18,10 @@ export const socialLinks: SocialLink[] = [
 export const players: Player[] = [
   {
     id: 1,
-    name: 'Vortex',
+    name: 'ANOYRE',
     role: 'Top',
     image: 'player-1',
-    bio: 'The unshakable frontline of GOG, Vortex is known for his rock-solid lane presence and game-changing teleports. A veteran of the scene, his leadership is as formidable as his champion pool.',
+    bio: 'The unshakable frontline of GOG, anoyre is known for his rock-solid lane presence and game-changing teleports. A veteran of the scene, his leadership is as formidable as his champion pool.',
     stats: [
       { name: 'KDA', value: '4.2' },
       { name: 'Win Rate', value: '65%' },
@@ -30,10 +30,10 @@ export const players: Player[] = [
   },
   {
     id: 2,
-    name: 'Nyx',
+    name: 'LE KARPADÓRE',
     role: 'Jungle',
     image: 'player-2',
-    bio: 'A strategic mastermind, Nyx controls the flow of the game from the shadows of the jungle. Her unpredictable gank paths and objective control make her a constant threat to the enemy team.',
+    bio: 'A strategic mastermind, Le Karpadôre controls the flow of the game from the shadows of the jungle. Her unpredictable gank paths and objective control make her a constant threat to the enemy team.',
     stats: [
       { name: 'KDA', value: '5.1' },
       { name: 'Win Rate', value: '70%' },
@@ -42,10 +42,10 @@ export const players: Player[] = [
   },
   {
     id: 3,
-    name: 'Rift',
+    name: 'SKULLL',
     role: 'Mid',
     image: 'player-3',
-    bio: 'The explosive heart of the team, Rift is a mechanical prodigy with a flair for the dramatic. His aggressive playstyle and ability to outplay opponents make him a fan favorite.',
+    bio: 'The explosive heart of the team, Skull is a mechanical prodigy with a flair for the dramatic. His aggressive playstyle and ability to outplay opponents make him a fan favorite.',
     stats: [
       { name: 'KDA', value: '6.3' },
       { name: 'Win Rate', value: '68%' },
@@ -54,10 +54,10 @@ export const players: Player[] = [
   },
   {
     id: 4,
-    name: 'Zenith',
+    name: 'BROKEN ORANGE',
     role: 'Bot',
     image: 'player-4',
-    bio: 'Cool, calm, and collected, Zenith is the team\'s reliable carry. His precise positioning and consistent damage output in teamfights have secured countless victories for GOG.',
+    bio: 'Cool, calm, and collected, Broken Orange is the team\'s reliable carry. His precise positioning and consistent damage output in teamfights have secured countless victories for GOG.',
     stats: [
       { name: 'KDA', value: '7.0' },
       { name: 'Win Rate', value: '71%' },
@@ -66,10 +66,10 @@ export const players: Player[] = [
   },
   {
     id: 5,
-    name: 'Aura',
+    name: 'NOWIN15',
     role: 'Support',
     image: 'player-5',
-    bio: 'The vigilant protector and shotcaller, Aura\'s vision control and crucial saves are the backbone of the team. Her game sense and communication enable her teammates to shine.',
+    bio: 'The vigilant protector and shotcaller, NoWin15\'s vision control and crucial saves are the backbone of the team. Her game sense and communication enable her teammates to shine.',
     stats: [
       { name: 'KDA', value: '3.8' },
       { name: 'Win Rate', value: '69%' },
