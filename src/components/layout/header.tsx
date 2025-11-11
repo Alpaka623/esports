@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { GOGLogo } from '@/components/icons/gog-logo';
+import { GOLogo } from '@/components/icons/go-logo';
 import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
@@ -20,8 +20,8 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <GOGLogo className="h-8 w-8 text-primary" />
-            <span className="font-bold font-headline">GOG ESPORTS</span>
+            <GOLogo className="h-8 w-8 text-primary" />
+            <span className="font-bold font-headline">GO ESPORTS</span>
           </Link>
         </div>
 
@@ -51,8 +51,8 @@ export function Header() {
             <SheetContent side="left">
               <div className="flex flex-col h-full py-6">
                  <Link href="/" className="mb-8 flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
-                    <GOGLogo className="h-8 w-8 text-primary" />
-                    <span className="font-bold font-headline">GOG ESPORTS</span>
+                    <GOLogo className="h-8 w-8 text-primary" />
+                    <span className="font-bold font-headline">GO ESPORTS</span>
                   </Link>
                 <nav className="flex flex-col space-y-4">
                   {navLinks.map((link) => (

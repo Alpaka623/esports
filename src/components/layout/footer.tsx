@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { GOGLogo } from '@/components/icons/gog-logo';
+import { GOLogo } from '@/components/icons/go-logo';
 import { socialLinks } from '@/lib/data';
 
 export function Footer() {
@@ -8,8 +8,8 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center space-x-2">
-            <GOGLogo className="h-8 w-8 text-primary" />
-            <span className="font-bold font-headline">GOG ESPORTS</span>
+            <GOLogo className="h-8 w-8 text-primary" />
+            <span className="font-bold font-headline">GO ESPORTS</span>
           </div>
           <div className="flex items-center space-x-4">
             {socialLinks.map((link) => (
@@ -27,14 +27,14 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-border/40 text-center text-sm text-foreground/60">
-          <p>&copy; {new Date().getFullYear()} GOG Esports. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} GO Esports. All rights reserved.</p>
           <p className="mt-2">
             Contact us:{' '}
             <a
-              href="mailto:contact@gog-esports.de"
+              href="mailto:contact@go-esports.de"
               className="text-primary hover:underline"
             >
-              contact@gog-esports.de
+              contact@go-esports.de
             </a>
           </p>
         </div>

@@ -23,10 +23,17 @@ export default function Home() {
     <div className="flex flex-col items-center">
       {/* Hero Section */}
       <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
+          <Image
+            src="/imgs/hero.jpg"
+            alt={'Esports Hero Background'}
+            fill
+            className="object-cover brightness-50"
+            priority
+          />
 
         <div className="relative z-10 p-4">
-          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-accent">
-            GOG ESPORTS
+          <h1 className="text-4xl md:text-7xl font-bold font-headline tracking-tighter bg-clip-text text-transparent bg-gradient-to-r text-white from-primary via-purple-400 to-accent">
+            GO ESPORTS
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-neutral-200">
             Gymnastik ohne Grenzen: Pushing the limits in the League of Legends arena.
@@ -42,9 +49,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-16 sm:py-24 space-y-24">
+      <div className="container mx-auto px-4 py-16">
         {/* Quick Links Section */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <Link href="/team" className="group">
             <Card className="h-full text-center hover:border-primary transition-all duration-300 transform hover:-translate-y-1">
               <CardHeader>
@@ -70,8 +77,8 @@ export default function Home() {
         </section>
 
         {/* Latest News */}
-        <section>
-          <h2 className="text-3xl font-bold font-headline mb-6 text-center">Latest News</h2>
+        <section className='mb-8'>
+          <h2 className="text-3xl !pt-6 font-bold font-headline mb-6 text-center">Latest News</h2>
           <div className="space-y-6 max-w-4xl mx-auto">
             {latestNews.map((article) => {
               const articleImage = PlaceHolderImages.find((img) => img.id === article.image);
@@ -108,23 +115,15 @@ export default function Home() {
               const playerImage = PlaceHolderImages.find((img) => img.id === player.image);
               return (
                 <Link href="/team" key={player.id} className="group">
-                  <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
-                    {playerImage && (
-                      <Image
-                        src={playerImage.imageUrl}
-                        alt={playerImage.description}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                        data-ai-hint={playerImage.imageHint}
-                      />
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-4">
-                      <div className="text-primary">{roleIcons[player.role]}</div>
-                      <h3 className="text-white font-bold font-headline text-xl mt-1">{player.name}</h3>
-                      <p className="text-neutral-300 text-sm">{player.role}</p>
+                  <Card>
+                    <div className="relative aspect-square md:aspect-[2] rounded-lg overflow-hidden">
+                      <div className="absolute bottom-0 left-0 p-4">
+                        <div className="text-primary">{roleIcons[player.role]}</div>
+                        <h3 className="text-white font-bold font-headline text-xl mt-1">{player.name}</h3>
+                        <p className="text-neutral-300 text-sm">{player.role}</p>
+                      </div>
                     </div>
-                  </div>
+                  </Card>
                 </Link>
               );
             })}

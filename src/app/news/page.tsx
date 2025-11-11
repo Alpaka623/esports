@@ -15,7 +15,7 @@ export default function NewsPage() {
           Latest <span className="text-primary">News</span> & Updates
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-          All the latest announcements, game analyses, and stories from the GOG ESPORTS team.
+          All the latest announcements, game analyses, and stories from the GO ESPORTS team.
         </p>
       </div>
 

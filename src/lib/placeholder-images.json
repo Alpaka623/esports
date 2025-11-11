@@ -7,8 +7,8 @@
       "imageHint": "esports background"
     },
     {
-      "id": "gog-logo",
-      "description": "GOG Esports team logo.",
+      "id": "go-logo",
+      "description": "GO Esports team logo.",
       "imageUrl": "https://images.unsplash.com/photo-1661348027228-e7f05cd5a254?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnYW1pbmclMjBsb2dvfGVufDB8fHx8MTc2Mjc3MTYzOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gaming logo"
     },
@@ -38,13 +38,13 @@
     },
     {
       "id": "about-us-team",
-      "description": "GOG Esports team posing together.",
+      "description": "GO Esports team posing together.",
       "imageUrl": "https://images.unsplash.com/photo-1759701547467-a54a5e86a4f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlc3BvcnRzJTIwdGVhbXxlbnwwfHx8fDE3NjI4NDg1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "esports team"
     },
     {
       "id": "about-us-facility",
-      "description": "GOG Esports training facility.",
+      "description": "GO Esports training facility.",
       "imageUrl": "https://images.unsplash.com/photo-1630201129622-a8e8ef3f7245?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnYW1pbmclMjBzZXR1cHxlbnwwfHx8fDE3NjI4MTY2MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gaming setup"
     }
