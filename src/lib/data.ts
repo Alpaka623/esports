@@ -1,10 +1,9 @@
-import type { Player, Match, NewsArticle, NavLink, SocialLink } from './types';
+import type { Player, NewsArticle, NavLink, SocialLink } from './types';
 import { Youtube, Twitch, Twitter, Instagram } from 'lucide-react';
 
 export const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
   { href: '/team', label: 'Team' },
-  { href: '/schedule', label: 'Schedule' },
   { href: '/news', label: 'News' },
   { href: '/about', label: 'About' },
 ];
@@ -76,49 +75,6 @@ export const players: Player[] = [
       { name: 'Win Rate', value: '69%' },
       { name: 'Vision Score/min', value: '2.5' },
     ],
-  },
-];
-
-export const matches: Match[] = [
-  {
-    id: 1,
-    date: '2024-08-15T18:00:00Z',
-    opponent: { name: 'Cyber Dragons', logo: 'opponent-logo-1' },
-    tournament: 'Summer Split - Week 8',
-    result: 'W',
-    score: '2-0',
-  },
-  {
-    id: 2,
-    date: '2024-08-08T20:00:00Z',
-    opponent: { name: 'Shadow Wolves', logo: 'opponent-logo-2' },
-    tournament: 'Summer Split - Week 7',
-    result: 'L',
-    score: '1-2',
-  },
-  {
-    id: 3,
-    date: '2024-08-01T17:00:00Z',
-    opponent: { name: 'Quantum Leap', logo: 'opponent-logo-3' },
-    tournament: 'Summer Split - Week 6',
-    result: 'W',
-    score: '2-1',
-  },
-  {
-    id: 4,
-    date: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
-    opponent: { name: 'Shadow Wolves', logo: 'opponent-logo-2' },
-    tournament: 'Summer Split - Playoffs',
-    result: 'TBD',
-    score: 'vs',
-  },
-    {
-    id: 5,
-    date: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(),
-    opponent: { name: 'Cyber Dragons', logo: 'opponent-logo-1' },
-    tournament: 'Summer Split - Playoffs',
-    result: 'TBD',
-    score: 'vs',
   },
 ];
 

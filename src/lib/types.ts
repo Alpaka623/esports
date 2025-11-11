@@ -20,18 +20,6 @@ export type Player = {
   stats: { name: string; value: string }[];
 };
 
-export type Match = {
-  id: number;
-  date: string;
-  opponent: {
-    name: string;
-    logo: string;
-  };
-  tournament: string;
-  result: 'W' | 'L' | 'TBD';
-  score: string;
-};
-
 export type NewsArticle = {
   id: number;
   title: string;
