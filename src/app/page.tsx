@@ -2,8 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, Newspaper, Users } from 'lucide-react';
-import { players, news } from '@/lib/data';
+import { players } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const roleIcons: { [key: string]: React.ReactNode } = {
@@ -15,7 +14,6 @@ const roleIcons: { [key: string]: React.ReactNode } = {
 };
 
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
-const latestNews = news.slice(0, 2);
 const teamPlayers = players.slice(0, 5);
 
 export default function Home() {
@@ -39,9 +37,6 @@ export default function Home() {
             Gymnastik ohne Grenzen: Pushing the limits in the League of Legends arena.
           </p>
           <div className="mt-8 flex justify-center gap-4">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link href="/news">Latest News</Link>
-            </Button>
             <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
               <Link href="/team">Meet the Team</Link>
             </Button>
@@ -50,62 +45,6 @@ export default function Home() {
       </section>
 
       <div className="container mx-auto px-4 py-16">
-        {/* Quick Links Section */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          <Link href="/team" className="group">
-            <Card className="h-full text-center hover:border-primary transition-all duration-300 transform hover:-translate-y-1">
-              <CardHeader>
-                <Users className="h-12 w-12 mx-auto text-primary" />
-                <CardTitle className="font-headline mt-4">Our Roster</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">Meet the players behind the champions.</p>
-              </CardContent>
-            </Card>
-          </Link>
-          <Link href="/news" className="group">
-            <Card className="h-full text-center hover:border-primary transition-all duration-300 transform hover:-translate-y-1">
-              <CardHeader>
-                <Newspaper className="h-12 w-12 mx-auto text-primary" />
-                <CardTitle className="font-headline mt-4">Latest News</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">Stay updated with team announcements.</p>
-              </CardContent>
-            </Card>
-          </Link>
-        </section>
-
-        {/* Latest News */}
-        <section className='mb-8'>
-          <h2 className="text-3xl !pt-6 font-bold font-headline mb-6 text-center">Latest News</h2>
-          <div className="space-y-6 max-w-4xl mx-auto">
-            {latestNews.map((article) => {
-              const articleImage = PlaceHolderImages.find((img) => img.id === article.image);
-              return (
-                <Link href="/news" key={article.id}>
-                  <Card className="flex flex-col md:flex-row items-center gap-6 p-4 hover:bg-card/80 transition-colors">
-                    {articleImage && (
-                      <Image
-                        src={articleImage.imageUrl}
-                        alt={articleImage.description}
-                        width={150}
-                        height={100}
-                        className="rounded-md object-cover w-full md:w-[150px] h-[100px]"
-                        data-ai-hint={articleImage.imageHint}
-                      />
-                    )}
-                    <div className="flex-1">
-                      <p className="text-sm text-muted-foreground">{article.date}</p>
-                      <h3 className="font-semibold font-headline text-lg mt-1">{article.title}</h3>
-                    </div>
-                    <ArrowRight className="h-5 w-5 text-primary ml-auto hidden md:block" />
-                  </Card>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
 
         {/* Team Preview */}
         <section>

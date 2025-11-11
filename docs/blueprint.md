@@ -4,7 +4,6 @@
 
 - Player Profiles: Detailed profiles for each team member, showcasing their roles, stats, and achievements.
 - Match Schedule and Results: Interactive schedule displaying upcoming matches and historical results, with an option to filter by tournament or opponent.
-- News Section: Latest news, announcements, and blog posts about GO Esports and the League of Legends team.
 - About Us Page: Information about the team's history, mission, and values.
 - Contact Footer: Footer section with contact information, including a mailto link for contacting contact@GO-esports.de.
 
@@ -15,5 +14,5 @@
 - Accent color: Purple (#BE29EC) for secondary highlights and interactive states, complementing the blue and adding a vibrant touch.
 - Body and headline font: 'Space Grotesk', a proportional sans-serif with a modern techy feel.
 - Use sharp, vector-based icons to represent game roles, social media links, and other interactive elements.
-- Modern, grid-based layout with clear sections for each content type (player profiles, match schedule, news). Ensure responsiveness across different screen sizes.
+- Modern, grid-based layout with clear sections for each content type (player profiles, match schedule). Ensure responsiveness across different screen sizes.
 - Subtle transitions and animations when navigating between pages or interacting with elements (e.g., hovering over player cards, displaying match details).
