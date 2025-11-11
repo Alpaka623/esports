@@ -2,8 +2,6 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function AboutPage() {
-  const teamImage = PlaceHolderImages.find((img) => img.id === 'about-us-team');
-  const facilityImage = PlaceHolderImages.find((img) => img.id === 'about-us-facility');
 
   return (
     <div className="bg-background">
@@ -28,32 +26,26 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-          {teamImage && (
             <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl shadow-accent/20">
               <Image
-                src={teamImage.imageUrl}
-                alt={teamImage.description}
+                src="/imgs/pic2.jpg"
+                alt="GO Esports team"
                 fill
                 className="object-cover"
-                data-ai-hint={teamImage.imageHint}
               />
             </div>
-          )}
         </div>
 
         {/* Our Mission Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {facilityImage && (
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl shadow-primary/20 lg:order-last">
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl shadow-accent/20">
               <Image
-                src={facilityImage.imageUrl}
-                alt={facilityImage.description}
+                src="/imgs/pic1.jpg"
+                alt="GO Esports team"
                 fill
                 className="object-cover"
-                data-ai-hint={facilityImage.imageHint}
               />
             </div>
-          )}
           <div>
             <h2 className="text-3xl font-bold font-headline mb-4">Our <span className="text-primary">Mission</span></h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
