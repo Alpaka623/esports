@@ -9,6 +9,17 @@ export const metadata: Metadata = {
   title: 'GO Esports Hub',
   description: 'Welcome to the official hub for GO ESPORTS League of Legends team.',
   keywords: ['GO ESPORTS', 'League of Legends', 'esports', 'gaming', 'team'],
+  icons: {
+    icon: {
+      url: '/favicon.ico',
+      // 'sizes: "any"' signalisiert dem Browser, dass diese ICO
+      // mehrere Größen enthält und er die beste auswählen soll.
+      sizes: 'any',
+    },
+    shortcut: {
+      url: '/favicon.ico',
+    },
+  },
 };
 
 export default function RootLayout({
