@@ -8,7 +8,7 @@ export const navLinks: NavLink[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { name: 'Instagram', url: '#', icon: Instagram },
+  { name: 'Instagram', url: 'https://www.instagram.com/goesportsde', icon: Instagram },
 ];
 
 export const players: Player[] = [
