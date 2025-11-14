@@ -58,10 +58,10 @@ export const players: Player[] = [
   },
   {
     id: 5,
-    name: 'NOWIN15',
+    name: 'NOVY',
     role: 'Support',
     birthdate: '2006-05-26',
-    bio: 'Guiding the team from the support position is NOWIN15. A true field general, he\'s known for his sharp macro calls and flawless protection of his carry. He\'s the brain and the shield of the team.',
+    bio: 'Guiding the team from the support position is NOVY. A true field general, he\'s known for his sharp macro calls and flawless protection of his carry. He\'s the brain and the shield of the team.',
     stats: [
       { name: 'Nationality', value: 'German' },
       { name: 'Favorite offrole Champ', value: 'Wukong' },
