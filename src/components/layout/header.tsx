@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { GOLogo } from '@/components/icons/go-logo';
 import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
@@ -49,6 +49,9 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
+              <SheetHeader className="sr-only">
+                <SheetTitle>Navigation Menu</SheetTitle>
+              </SheetHeader>
               <div className="flex flex-col h-full py-6">
                  <Link href="/" className="mb-8 flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
                     <GOLogo className="h-8 w-8 text-primary" />
