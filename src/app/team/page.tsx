@@ -63,7 +63,7 @@ export default function TeamPage() {
                     <div className="grid grid-cols-3 gap-4 text-center">
                       {displayStats.map((stat) => (
                         <div key={stat.name} className="bg-card px-2 py-4 md:p-4 rounded-lg">
-                          <p className="md:text-2xl font-bold font-headline text-primary">{stat.value}</p>
+                          <p className="md:text-2xl font-bold font-headline text-primary break-words">{stat.value}</p>
                           <p className="text-xs md:text-sm text-muted-foreground">{stat.name}</p>
                         </div>
                       ))}
