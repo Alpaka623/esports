@@ -1,7 +1,6 @@
-import Image from 'next/image';
-import type { ComponentProps } from 'react';
+import Image, {ImageProps} from 'next/image';
 
-type GOLogoProps = Omit<ComponentProps<typeof Image>, 'src' | 'alt' | 'width' | 'height'>;
+type GOLogoProps = Omit<ImageProps, 'src' | 'alt' | 'width' | 'height'>;
 
 export function GOLogo(props: GOLogoProps) {
   return (
