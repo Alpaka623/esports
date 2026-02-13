@@ -47,13 +47,13 @@ export const players: Player[] = [
   },
   {
     id: 4,
-    name: 'BROKEN ORANGE',
+    name: 'DODO',
     role: 'Bot',
-    birthdate: '2005-12-11',
-    bio: 'Cool, calm, and collected—that\'s BROKEN ORANGE. As the team\'s bot lane carry, he\'s the definition of reliable. His precise mechanics and ice-cold demeanor in teamfights are what you can count on when the game is on the line.',
+    birthdate: '2005-04-23',
+    bio: 'When you need pure firepower, you call DODO. This aggressive bot laner is always ready to take the 2v2 and push the limits. We\'re excited to see his confidence and mechanical skill light up the bot lane.',
     stats: [
       { name: 'Nationality', value: 'German' },
-      { name: 'Favorite offrole Champ', value: 'Lillia' },
+      { name: 'Favorite offrole Champ', value: 'Sion' },
     ],
   },
   {
@@ -80,13 +80,13 @@ export const players: Player[] = [
   },
   {
     id: 7,
-    name: 'DODO',
+    name: 'BROKEN ORANGE',
     role: 'Bot',
-    birthdate: '2005-04-23',
-    bio: 'When you need pure firepower, you call DODO. This aggressive bot laner is always ready to take the 2v2 and push the limits. We\'re excited to see his confidence and mechanical skill light up the bot lane.',
+    birthdate: '2005-12-11',
+    bio: 'Cool, calm, and collected—that\'s BROKEN ORANGE. As the team\'s bot lane carry, he\'s the definition of reliable. His precise mechanics and ice-cold demeanor in teamfights are what you can count on when the game is on the line.',
     stats: [
       { name: 'Nationality', value: 'German' },
-      { name: 'Favorite offrole Champ', value: 'Sion' },
+      { name: 'Favorite offrole Champ', value: 'Lillia' },
     ],
   },
   {
